@@ -7,9 +7,9 @@ pool:
   vmImage: 'macOS-latest'
 
 steps:
-- task: Gradle@3
+- task: Gradle@2
   inputs:
-    gradleWrapperFile: 'gradlew' # string. Alias: wrapperScript. Required. Gradle wrapper. Default: gradlew.
+    gradleWrapperFile: 'gradlew'
     workingDirectory: '' 
     tasks: 'build' # string. Required. Tasks. Default: build.
  
