@@ -23,7 +23,7 @@ steps:
   
   # Advanced
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: 'default'
+    jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     gradleOptions: '-Xmx1024m'
   
