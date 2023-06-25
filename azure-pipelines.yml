@@ -9,16 +9,16 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: '$(system.defaultWorkingDirectory)/AndroidApps/MyApp'
-    gradleWrapperFile: '$(system.defaultWorkingDirectory)/AndroidApps/MyApp/gradlew'
+    workingDirectory: ''
+    gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    tasks: 'assembleDebug test'
-  displayName: gradlew assembleDebug test
+    tasks: 'build'
+  displayName: gradlew build test
 
 - task: CopyFiles@2
   inputs:
