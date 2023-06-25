@@ -9,7 +9,7 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: '*/gradle/wrapper/gradle-wrapper.jar'
+    workingDirectory: ''
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
